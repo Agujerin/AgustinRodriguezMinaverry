@@ -6,10 +6,18 @@
   margin: 0;
 }
 
+a:visited,
+a:link {
+    color: currentColor;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 body {
   font-family: calibri, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to left, #a0ebc6 20%,#e5f5e9 20% 40%,#bdf4c9 40% 60%,#58b35d 60% 80%,#495f4b 80%);
 }
 
 code {
@@ -33,3 +41,26 @@ button:hover {
   background-color: #56e543;
   transition: background-color .5s ease-in-out;
 }
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-top: 3rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-style: italic;
+  filter: drop-shadow(2px 2px  #56e543);
+}
+
+

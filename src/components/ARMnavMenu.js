@@ -2,8 +2,14 @@ import { NavLink } from "react-router-dom"
 import "./ARMnavMenu.css"
 
 export default function NavMenu({theme,setTheme,aside,setAside}){
-    const handleCats=()=> setTheme("cats")
-    const handleDark=()=> setTheme("dark")
+    const handleCats=()=> {
+        setTheme("cats")
+        localStorage.setItem('userTheme', 'cats')
+    }
+    const handleDark=()=> {
+        setTheme("dark")
+        localStorage.setItem('userTheme', 'dark')
+    }   
     const handleOpenMenu=()=> aside? setAside(false) : setAside(true)
     
     return(

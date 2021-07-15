@@ -1,15 +1,5 @@
-.home-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    width: 80%;
-    padding-top: 2rem;
-}
-
 .home-section p {
     text-align: justify;
-    padding-top: 1em;
 }
 
 .home-section b {
