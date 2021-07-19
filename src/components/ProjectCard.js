@@ -8,6 +8,7 @@ export default function ProjectCard({children,cardData}){
             <div className="card-image">
                 <img src={img1} alt="webImg" className="img1"></img>
                 <img src={img2} alt="webImg" className="img2"></img>
+                <i className="fas fa-eye"></i>
             </div>
             {children}
             <button><a href={web} rel="noreferrer" target="_blank">WEB</a></button>

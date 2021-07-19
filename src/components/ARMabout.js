@@ -1,7 +1,9 @@
 import ARM from "../assets/ARM.png"
+import cat from "../assets/cat.png"
+import linkedin from "../assets/linkedin.png"
 import "./ARMabout.css"
 
-export default function ARMabout(){
+export default function ARMabout({theme}){
     return(
         <section className="about-section">
             <h2>MI PERFIL</h2>
@@ -9,10 +11,11 @@ export default function ARMabout(){
                 <div className="flip-img">
                     <div className="flip-inner">
                     <div className="flip-front">
-                            <img src={ARM} alt="foto"/>
+                            {(theme === "dark")? <img src={ARM} alt="foto"/>  
+                            : <img src={cat} alt="foto"/>}
                         </div>
                         <div className="flip-back">
-                            <a href="https://www.linkedin.com/in/agustín-rodríguez-minaverry-267445212">DESCARGAR CV</a>
+                            <a href="https://drive.google.com/uc?id=1pPACuZ0YJEtPr5aAUjpkBWcAZgEeLK3B&export=download&authuser=0">DESCARGAR CV</a>
                         </div>
                     </div>
                 </div>
@@ -28,7 +31,7 @@ export default function ARMabout(){
             </article>
             <div className="about-history">
                 <p><b>RESEÑA:</b> mi experiencia con los lenguajes de programación era prácticamente nula a principios de este año 2021. De hecho llegué a este apasionante mundo casi de casualidad, desde la lectura un libro sobre la "edad de oro del software español" en el que se cuenta la historia de muchos programadores autodidactas que llegaron a crear joyas como La abadía del crimen o Commandos.<br></br>
-                Esa particular influencia me hizo descubrir que la programación no solo es accesible a cualquiera que le pierda el miedo (y que le ponga dedicación), sino que además me ayudó a encontrar una vocación que creía que no tenía.<br></br>
+                Esa particular influencia me hizo descubrir que la programación no sólo es accesible a cualquiera que le pierda el miedo (y que le ponga dedicación), sino que además me ayudó a encontrar una vocación que creía que no tenía.<br></br>
                 Como podrás ver terrícola, en mi CV hay experiencias laborales de lo más variadas y te aseguro que no llegué a ninguna de ellas a raíz de una vocación marcada de antemano. Sí puedo asegurar que cada una ayudó a formar a la persona que soy ahora, mi ética laboral y mis motivaciones.<br></br>
                 Soy prolijo, detallista y me gustan las cosas simples, sin exagerado ornamento. Ese es el estilo que busco en mis proyectos.<br></br></p>
                 <hr></hr>
@@ -40,9 +43,10 @@ export default function ARMabout(){
                 <hr></hr>
                 <p><b>CONOCIMIENTOS:</b> además de los cursos de HTML, CSS, Javascript y React JS en los que basé esta primera etapa de aprendizaje, también cuento en la actualidad con conocimientos de Git, Github y Responsive Design.</p>
             </div>
-            <div className="LI-profile-badge" data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="dark" data-vanity="agustín-rodríguez-minaverry-267445212">
-                <a className="LI-simple-link" href='https://ar.linkedin.com/in/agust%C3%ADn-rodr%C3%ADguez-minaverry-267445212?trk=profile-badge'>Agustín Rodríguez Minaverry</a>
-            </div>
+            <a className="linkedin-btn" href="https://ar.linkedin.com/in/agust%C3%ADn-rodr%C3%ADguez-minaverry-267445212" rel="noreferrer">
+                <img src={linkedin} alt="linkedin"></img>
+                Ver Perfil
+            </a>
         </section>
     )
 }

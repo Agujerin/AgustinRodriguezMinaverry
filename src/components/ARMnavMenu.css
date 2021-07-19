@@ -73,8 +73,8 @@
     position: absolute;
     left: 0;
     top: 2.75rem;
-    z-index: 1000;
-    height: 100vh;
+    z-index: 800;
+    height: 100%;
     color: #fff;
     box-shadow: 2px 2px 10px #fff;
     background-color: #2b2a2a;

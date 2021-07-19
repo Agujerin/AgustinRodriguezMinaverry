@@ -1,4 +1,5 @@
 .projects-container h3 {
+    width: 100%;
     font-style: italic;
     font-size: 1.5rem;
     filter: drop-shadow(1px 1px 1px #56e543);

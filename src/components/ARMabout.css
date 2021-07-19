@@ -1,7 +1,3 @@
-.about-section b{
-    color: #56e543;
-}
-
 .about-article {
     display: flex;
     flex-direction: column;
@@ -80,10 +76,35 @@
 .about-history {
     margin-top: 2em;
     margin-bottom: 5em;
-    text-align: justify;
 }
 
 .about-history hr {
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.linkedin-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: .2em;
+    border: 2px solid #56e543;
+    border-radius: 1em;
+    font-weight: bold;
+    color: #56e543;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.linkedin-btn img {
+    margin-bottom: .3em;
+    border-radius: .6em;
+}
+
+.linkedin-btn:hover {
+    color: #fff;
+    background-color: #56e543;
+    transition: background-color .5s ease-in-out;
 }
