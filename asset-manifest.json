@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/AgustinRodriguezMinaverry/static/css/main.dff9a0f5.chunk.css",
-    "main.js": "/AgustinRodriguezMinaverry/static/js/main.70555595.chunk.js",
-    "main.js.map": "/AgustinRodriguezMinaverry/static/js/main.70555595.chunk.js.map",
+    "main.css": "/AgustinRodriguezMinaverry/static/css/main.8c9610f2.chunk.css",
+    "main.js": "/AgustinRodriguezMinaverry/static/js/main.edcda149.chunk.js",
+    "main.js.map": "/AgustinRodriguezMinaverry/static/js/main.edcda149.chunk.js.map",
     "runtime-main.js": "/AgustinRodriguezMinaverry/static/js/runtime-main.e0d2403f.js",
     "runtime-main.js.map": "/AgustinRodriguezMinaverry/static/js/runtime-main.e0d2403f.js.map",
     "static/js/2.2e078def.chunk.js": "/AgustinRodriguezMinaverry/static/js/2.2e078def.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.bf3183d3.chunk.js": "/AgustinRodriguezMinaverry/static/js/3.bf3183d3.chunk.js",
     "static/js/3.bf3183d3.chunk.js.map": "/AgustinRodriguezMinaverry/static/js/3.bf3183d3.chunk.js.map",
     "index.html": "/AgustinRodriguezMinaverry/index.html",
-    "static/css/main.dff9a0f5.chunk.css.map": "/AgustinRodriguezMinaverry/static/css/main.dff9a0f5.chunk.css.map",
+    "static/css/main.8c9610f2.chunk.css.map": "/AgustinRodriguezMinaverry/static/css/main.8c9610f2.chunk.css.map",
     "static/js/2.2e078def.chunk.js.LICENSE.txt": "/AgustinRodriguezMinaverry/static/js/2.2e078def.chunk.js.LICENSE.txt",
     "static/media/ARM.6efdac6a.png": "/AgustinRodriguezMinaverry/static/media/ARM.6efdac6a.png",
     "static/media/adventure.7d18273a.png": "/AgustinRodriguezMinaverry/static/media/adventure.7d18273a.png",
@@ -18,11 +18,11 @@
     "static/media/caricias2.075824d8.png": "/AgustinRodriguezMinaverry/static/media/caricias2.075824d8.png",
     "static/media/cat.99c5fe6b.png": "/AgustinRodriguezMinaverry/static/media/cat.99c5fe6b.png",
     "static/media/App.css": "/AgustinRodriguezMinaverry/static/media/catsbg.58cabdea.png",
-    "static/media/error404.2d18c574.png": "/AgustinRodriguezMinaverry/static/media/error404.2d18c574.png",
     "static/media/estenometro.60c0fd75.png": "/AgustinRodriguezMinaverry/static/media/estenometro.60c0fd75.png",
     "static/media/estenometro2.1219646b.png": "/AgustinRodriguezMinaverry/static/media/estenometro2.1219646b.png",
     "static/media/favicon-animado.487fa2ca.ico": "/AgustinRodriguezMinaverry/static/media/favicon-animado.487fa2ca.ico",
     "static/media/linkedin.d415d4e2.png": "/AgustinRodriguezMinaverry/static/media/linkedin.d415d4e2.png",
+    "static/media/mario404.601c9d2b.png": "/AgustinRodriguezMinaverry/static/media/mario404.601c9d2b.png",
     "static/media/pptls.4f5a5391.png": "/AgustinRodriguezMinaverry/static/media/pptls.4f5a5391.png",
     "static/media/pptls1.a5335ea6.png": "/AgustinRodriguezMinaverry/static/media/pptls1.a5335ea6.png",
     "static/media/rickandmorty.c2f3fb0e.png": "/AgustinRodriguezMinaverry/static/media/rickandmorty.c2f3fb0e.png",
@@ -30,12 +30,14 @@
     "static/media/simon.753e9bb3.png": "/AgustinRodriguezMinaverry/static/media/simon.753e9bb3.png",
     "static/media/simon2.38cfb214.png": "/AgustinRodriguezMinaverry/static/media/simon2.38cfb214.png",
     "static/media/todolist.13d4bc14.png": "/AgustinRodriguezMinaverry/static/media/todolist.13d4bc14.png",
-    "static/media/todolist1.bcd60368.png": "/AgustinRodriguezMinaverry/static/media/todolist1.bcd60368.png"
+    "static/media/todolist1.bcd60368.png": "/AgustinRodriguezMinaverry/static/media/todolist1.bcd60368.png",
+    "static/media/zelda.22130ade.png": "/AgustinRodriguezMinaverry/static/media/zelda.22130ade.png",
+    "static/media/zelda2.817a396c.png": "/AgustinRodriguezMinaverry/static/media/zelda2.817a396c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e0d2403f.js",
     "static/js/2.2e078def.chunk.js",
-    "static/css/main.dff9a0f5.chunk.css",
-    "static/js/main.70555595.chunk.js"
+    "static/css/main.8c9610f2.chunk.css",
+    "static/js/main.edcda149.chunk.js"
   ]
 }
