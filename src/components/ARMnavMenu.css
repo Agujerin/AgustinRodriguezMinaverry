@@ -21,6 +21,7 @@
 .nav-menu-title {
     margin-right: 3em;
     font-style: italic;
+    cursor: pointer;
 }
 
 .nav-menu a, 
@@ -78,7 +79,6 @@
     color: #fff;
     box-shadow: 2px 2px 10px #fff;
     background-color: #2b2a2a;
-    
 }
 
 .aside-nav-menu-list {

@@ -13,7 +13,7 @@ export const useForm=(initialForm,validations,refName,refEmail,refSubject,refMes
             [e.target.name] : e.target.value
         })
         
-        if (e.target.value === "adventure" || e.target.value === "robinett" || e.target.value === "warren") setEgg(true)
+        if (e.target.value === "adventure" || e.target.value === "robinett" || e.target.value === "warren" || e.target.value === "Adventure" || e.target.value === "Robinett" || e.target.value === "Warren") setEgg(true)
     }
     
     const handleSubmit=(e)=>{

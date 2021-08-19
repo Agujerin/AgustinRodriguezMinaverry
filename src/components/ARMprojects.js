@@ -5,6 +5,8 @@ import estenometro from "../assets/estenometro.png"
 import estenometro2 from "../assets/estenometro2.png"
 import rickandmorty from "../assets/rickandmorty.png"
 import rickandmorty2 from "../assets/rickandmorty2.png"
+import zelda from "../assets/zelda.png"
+import zelda2 from "../assets/zelda2.png"
 import simon from "../assets/simon.png"
 import simon2 from "../assets/simon2.png"
 import todolist from "../assets/todolist.png"
@@ -14,17 +16,23 @@ import pptls1 from "../assets/pptls1.png"
 import "./ARMprojects.css"
 
 export default function ARMprojects(){
-    const cariciasCard = {
-        img1: caricias,
-        img2: caricias2,
-        web: "https://agujerin.github.io/caricias/",
-        repo: "https://github.com/Agujerin/caricias"
-    }
     const rickAndMortyCard = {
         img1: rickandmorty,
         img2: rickandmorty2,
         web: "https://agujerin.github.io/rickandmorty/#/",
         repo: "https://github.com/Agujerin/rickandmorty"
+    }
+    const zeldaStoreCard = {
+        img1: zelda,
+        img2: zelda2,
+        web: "https://agujerin.github.io/zeldaStore/",
+        repo: "https://github.com/Agujerin/zeldaStore"
+    }
+    const cariciasCard = {
+        img1: caricias,
+        img2: caricias2,
+        web: "https://agujerin.github.io/caricias/",
+        repo: "https://github.com/Agujerin/caricias"
     }
     const simonSPACard = {
         img1: simon,
@@ -60,6 +68,13 @@ export default function ARMprojects(){
                 <p><b>DESCRIPCIÓN:</b> la página interactúa con la API de Rick and Morty y cuenta con un buscador de personajes, información extra sobre cada uno de ellos y una vista de "favoritos" en los que el usuario puede guardar sus personajes predilectos.<br></br>
                 Desarrollado con HTML, CSS y React JS.<br></br>
                 <b>OBSERVACIÓN:</b> en los favoritos suele meterse un intruso.</p>
+            </ProjectCard>
+            <hr></hr>
+            <h3><b>ZELDA STORE</b></h3>
+            <ProjectCard cardData={zeldaStoreCard}>
+                <p><b>DESCRIPCIÓN:</b> un falso negocio online con algunos de los ítems más característicos del juego de NES. Apenas una excusa simpática para practicar el contexto global (Context) y el manejo de estados complejos (Reducer) de React.<br></br>
+                Desarrollado con HTML, CSS y React JS.<br></br>
+                <b>OBSERVACIÓN:</b> es solo una inocente práctica, por favor Nintendo no me hagas juicio.</p>
             </ProjectCard>
             <hr></hr>
             <h3><b>¿DÓNDE ESTÁ CARICIAS?</b></h3>

@@ -6,10 +6,6 @@
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 a:visited,
 a:link {
     color: currentColor;

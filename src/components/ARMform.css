@@ -14,13 +14,23 @@
     font-weight: bold;
 }
 
-.contact-form i {
+.info-icon {
     position: absolute;
     right: 1em;
 }
 
-.contact-form i:hover {
+.info-icon:hover {
     color: #56e543;
+}
+
+.error-icon {
+    display: inline;
+    color: rgb(243, 41, 41);
+    cursor: inherit;
+}
+
+.error-text {
+    font-style: italic;
 }
 
 .info {

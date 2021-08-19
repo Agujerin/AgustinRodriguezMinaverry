@@ -15,7 +15,7 @@ export default function ARMabout({theme}){
                             : <img src={cat} alt="foto"/>}
                         </div>
                         <div className="flip-back">
-                            <a href="https://drive.google.com/uc?id=1pPACuZ0YJEtPr5aAUjpkBWcAZgEeLK3B&export=download&authuser=0">DESCARGAR CV</a>
+                            <a href="https://drive.google.com/uc?id=15uae5SZJSxPYNdrMPmN_C_uwJ4VZnCCq&export=download&authuser=0">DESCARGAR CV</a>
                         </div>
                     </div>
                 </div>

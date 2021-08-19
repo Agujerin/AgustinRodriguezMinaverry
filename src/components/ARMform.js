@@ -18,33 +18,33 @@ const validations=(form,refName,refEmail,refSubject,refMessage)=>{
     const emailRegex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     
     if(!form.name.trim()){
-        errors.name = "Debe completar su nombre"
+        errors.nameError = "Debe completar su nombre"
         refName.current.style.borderColor = "#ee2020"
         setTimeout(()=> refName.current.style.borderColor = "#56e543" ,1300)
     }else if (!nameRegex.test(form.name.trim())){
-        errors.name = "Este campo solo acepta letras y espacios en blanco"
+        errors.nameError = "Este campo solo acepta letras y espacios en blanco"
         refName.current.style.borderColor = "#ee2020"
         setTimeout(()=> refName.current.style.borderColor = "#56e543" ,1300)
     }
 
     if(!form.email.trim()){
-        errors.email = "Debe completar su email"
+        errors.emailError = "Debe completar su email"
         refEmail.current.style.borderColor = "#ee2020"
         setTimeout(()=> refEmail.current.style.borderColor = "#56e543" ,1300)
     }else if(!emailRegex.test(form.email.trim())){
-        errors.email = "Debe ingresar un email válido"
+        errors.emailError = "Debe ingresar un email válido"
         refEmail.current.style.borderColor = "#ee2020"
         setTimeout(()=> refEmail.current.style.borderColor = "#56e543" ,1300)
     }
     
     if(!form.subject.trim()){
-        errors.subject = "Debe completar el asunto del mensaje"
+        errors.subjectError = "Debe completar el asunto del mensaje"
         refSubject.current.style.borderColor = "#ee2020"
         setTimeout(()=> refSubject.current.style.borderColor = "#56e543" ,1300)
     }
     
     if(!form.message.trim()){
-        errors.message = "Debe completar el mensaje"
+        errors.messageError = "Debe completar el mensaje"
         refMessage.current.style.borderColor = "#ee2020"
         setTimeout(()=> refMessage.current.style.borderColor = "#56e543" ,1300)
     }
@@ -61,9 +61,10 @@ export default function ARMform(){
     let refSubject = useRef()
     let refMessage = useRef()
       
-    const {form,loader,response,egg,handleChange,handleSubmit} = useForm(initialForm,validations,refName,refEmail,refSubject,refMessage)
+    const {form,loader,response,egg,errors,handleChange,handleSubmit} = useForm(initialForm,validations,refName,refEmail,refSubject,refMessage)
     
     let {name,email,subject,message} = form
+    let {nameError,emailError,subjectError,messageError} = errors
     
     const handleClick=()=>{
         setInfo(true)
@@ -75,6 +76,7 @@ export default function ARMform(){
             <h2>CONTACTO</h2>
             <form className="contact-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">NOMBRE</label>
+                {nameError && <h5 className="error-text">{nameError} <i className="fas fa-exclamation-triangle error-icon"></i></h5>}
                 {(info)
                 ? <div className="info">
                     <ul>
@@ -84,13 +86,16 @@ export default function ARMform(){
                         <li>El asunto y el mensaje no tienen límite de caracteres</li>    
                     </ul>
                 </div>
-                : <i className="fas fa-info-circle" onClick={handleClick}></i>}
+                : <i className="fas fa-info-circle info-icon" onClick={handleClick}></i>}
                 <input type="text" name="name" id="name" placeholder="Introduzca su nombre" value={name} ref={refName} onChange={handleChange}/>
                 <label htmlFor="email">E - MAIL</label>
+                {emailError && <h5 className="error-text">{emailError} <i className="fas fa-exclamation-triangle error-icon"></i></h5>}
                 <input type="email" name="email" id="email" placeholder="Introduzca su email" value={email} ref={refEmail} onChange={handleChange}/>
                 <label htmlFor="subject">ASUNTO</label>
+                {subjectError && <h5 className="error-text">{subjectError} <i className="fas fa-exclamation-triangle error-icon"></i></h5>}
                 <input type="text" name="subject" id="subject" placeholder="Asunto" value={subject} ref={refSubject} onChange={handleChange}/>
                 <label htmlFor="message">MENSAJE</label>
+                {messageError && <h5 className="error-text">{messageError} <i className="fas fa-exclamation-triangle error-icon"></i></h5>}
                 <textarea rows="10" name="message" id="message" value={message} ref={refMessage} onChange={handleChange} placeholder="Mensaje..."></textarea>
                 {(loader)? <Loader/> : <button type="submit">Enviar</button>}
             </form>

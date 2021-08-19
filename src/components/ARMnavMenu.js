@@ -17,10 +17,15 @@ export default function NavMenu({theme,setTheme,aside,setAside}){
         aside? setAside(false) : setAside(true)
     }
     
+    const goHome=()=>{
+        window.location.hash = "/"
+        window.scroll(0,0)
+    }
+    
     return(
         <nav className="nav-menu">
             <i className="fas fa-bars nav-menu-bars" onClick={handleOpenMenu}></i>
-            <h3 className="nav-menu-title">Agustín Rodríguez Minaverry</h3>
+            <h3 className="nav-menu-title" onClick={goHome}>Agustín Rodríguez Minaverry</h3>
             <NavLink exact to="/" activeClassName="active">INICIO</NavLink>
             <NavLink exact to="/about" activeClassName="active">PERFIL</NavLink>
             <NavLink exact to="/projects" activeClassName="active">GALERÍA DE TRABAJOS</NavLink>
